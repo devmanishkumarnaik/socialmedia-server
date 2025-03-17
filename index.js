@@ -75,7 +75,7 @@ app.use(morgan("common"));
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://reliable-strudel-f78d65.netlify.app', // Allow requests from your frontend
+    origin: 'https://peaceful-halva-12f725.netlify.app/', // Allow requests from your frontend
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
     credentials: true, // Allow cookies and credentials
     optionsSuccessStatus: 204, // Respond with 204 No Content for preflight requests
