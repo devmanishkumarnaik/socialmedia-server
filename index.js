@@ -75,8 +75,10 @@ app.use(morgan("common"));
 
 // CORS configuration
 const corsOptions = {
-    origin: 'https://reliable-strudel-f78d65.netlify.app/', // Replace with your client's URL
-    optionsSuccessStatus: 200 // Some legacy browsers (IE11, various SmartTVs) choke on 204
+    origin: 'https://reliable-strudel-f78d65.netlify.app', // Allow requests from your frontend
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
+    credentials: true, // Allow cookies and credentials
+    optionsSuccessStatus: 204, // Respond with 204 No Content for preflight requests
 };
 app.use(cors(corsOptions));
 
